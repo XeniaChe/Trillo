@@ -1,0 +1,110 @@
+.container{
+max-width: 120rem;
+margin: 8rem auto;
+background-color: var(--color_grey_light_1);
+box-shadow: var(--box_shadow);
+
+min-height: 50rem;
+display: block;
+
+@include respond(tabl-lands ){
+ margin: 0 auto;
+ max-width: 100%;
+}
+
+}
+
+.header{
+font-size: 1.4rem;
+background-color: var(--color_white);
+height: 7rem;
+border-bottom: 1px solid var(--color_grey_light_3) ;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+    @include respond(phone-500){
+        flex-wrap: wrap;
+        align-content: space-around;
+       
+        height: 11rem;
+    }
+
+    @include respond(phone-small-300 ){
+        flex-wrap: wrap;
+    }
+}
+
+.content {
+display: flex;
+    @include respond(tabl-port){
+        flex-direction: column;
+        }
+}
+
+.sidebar{
+background-color:var(--color_grey_dark_1);
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+flex: 0 0 18%;
+}
+
+.hotel-view{
+background-color:var(--color_white) ;
+
+flex: 1;
+
+}
+
+.details{
+    font-size: 1.4rem;
+display: flex;
+padding: 4rem;
+background-color: var(--color_grey_light_2);
+border-radius: var(--line) ;
+font-size: 1.4rem;
+
+    @include respond(phone ){
+    flex-direction: column;
+    padding-bottom: 1.0rem;
+    }
+
+
+}
+
+.description{
+    flex: 0 0 60%;
+    margin-right: 4rem;
+    background-color:var(--color_grey_light_1);
+    box-shadow: var(--box_shadow_3);
+    padding: 3rem;
+
+    @include respond(phone ){
+        flex:1;
+        margin-right: 0rem;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.user-reviews{
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+

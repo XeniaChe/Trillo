@@ -1,0 +1,49 @@
+// MEDIA QUERIES    
+// phone-small 415px
+//phone
+//tabl-port
+//tabl-lands
+//big-desktop
+
+/*ORDER : BAse + typography> 
+Base LAyouts + Grid>
+Page Layouts +Components */
+
+//1 em=16px 
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-small-300  {             //300px  300/16=18.75
+        @media (max-width: 18.75em) { @content }   
+    };
+    @if $breakpoint == phone-small  {             //400px  400/16=25
+        @media (max-width: 25em) { @content }   
+    };
+
+    @if $breakpoint == phone-450 {             //450px  450/16=28.125
+        @media (max-width: 28.125em) { @content }   
+    };
+
+    @if $breakpoint == phone-500 {             //500px  500/16=31.25
+        @media (max-width: 31.25em) { @content }   
+    };
+
+    @if $breakpoint == phone  {             //600px  600/16=37.5
+        @media (max-width: 37.5em) { @content }   
+    };
+
+    @if $breakpoint == tabl-port {              //900px   900/16=56.3
+        @media (max-width: 56.25em) { @content }    
+    };
+    @if $breakpoint == tabl-lands-1100 {                   //1100px   1100/16=75
+        @media (max-width: 68.75em) { @content }
+    };
+    @if $breakpoint == tabl-lands {                   //1200px   1200/16=75
+        @media (max-width: 75em) { @content }
+    };
+    @if $breakpoint == big-desktop {                 //1800px  
+        @media (min-width: 112.5em) { @content }
+    };
+    
+    
+}

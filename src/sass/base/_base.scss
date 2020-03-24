@@ -1,0 +1,77 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+:root {
+--color_white:white ;
+--color_primaty: #eb2f64;
+--color_primaty_light: #FF3366;
+--color_primaty_dark: #BA265D;
+
+--color_grey_light_1: #faf9f9;
+--color_grey_light_2: #f4f2f2;
+--color_grey_light_3: #f0eeee;
+--color_grey_light_4: #ccc;
+
+--color_grey_dark_1: #333;
+--color_grey_dark_2: #777;
+--color_grey_dark_3: #999;
+
+--box_shadow:0 4rem 4rem  rgba( 0, 0, 0, .4) ;
+--box_shadow_2: 1.5rem 1.5rem 2.8rem  rgba( 0, 0, 0, .4) ;
+--box_shadow_3: 0 .5rem 2.0rem  rgba( 0, 0, 0, .2) ;
+
+--line:1px solid var(--color_grey_light_4);
+
+--animation_btn_pulste: pulsate 1s infinite; 
+
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%;   //10px/16px =62.5%
+    box-sizing: border-box;
+    
+    @include respond (tabl-lands-1100 ){
+        font-size: 50%;
+    }
+
+}
+
+body {
+
+    padding: 3rem;          //padding is not inherited. Thi adds nice padding to all 'body' el-ts 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color_grey_dark_2);
+    background-image: linear-gradient(to bottom right, var(--color_primaty_light), var(--color_primaty_dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // min-height: 100vh;
+
+  
+}
