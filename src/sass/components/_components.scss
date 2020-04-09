@@ -109,15 +109,15 @@
             display: block;
         }
     }
-    /// popup messages
+////////// popup messages
     &__icon-box--message{
         position: absolute;
         display: none;
         top: 100%;
         left: 0;
-        min-width: 37rem;
+        min-width: 30rem;
         z-index: 1;
-        transform: translateX(-46%) ;
+        transform: translateX(-33%) ;
         overflow: hidden;
         box-shadow: var(--box_shadow_3);
        
@@ -148,14 +148,14 @@
         text-align: center;
         align-items: center;
         text-decoration: none;
-        opacity: .9;
+        opacity: .8;
         color: var(--color_grey_dark_2);
         
         transition: all .3s;
         &:hover {
             background-color: var(--color_grey_dark_1);
             color: var(--color_grey_light_1);
-            opacity: 1;
+            opacity: .9;
         }
 
         @include respond(phone-450 ) {
