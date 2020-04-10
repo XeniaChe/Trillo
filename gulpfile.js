@@ -58,14 +58,9 @@ function images(){
 exports.images = images;
 
 
-gulp.task('clean',function(){
-    return gulp.src(['build/styles', 'build/scripts', 'build/images'], {read:false}
-    .pipe(clean()));
-})
-exports.clean = clean;
 
 
 
 
 
-exports.default = gulp.series(exports.watch, exports.images, exports.clean );
+exports.default = gulp.series(exports.watch, exports.images,  exports.style );
