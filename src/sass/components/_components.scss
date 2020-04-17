@@ -672,14 +672,14 @@
         margin-right: 2rem;
 
         //OLDER BROWSER
-        background-image: url(../imagesMIN/chevron-thin-right.svg);
+        background-image: url(../images/chevron-thin-right.svg);
         background-size: cover;
 
         //NEWER BROWSER                           // using SVG icon as mask
         @supports (-webkit-mask-image: url()) or (mask-image: url()) {
             background-color: var(--color_primaty);
-            -webkit-mask-image: url(../imagesMIN/chevron-thin-right.svg);
-            mask-image: url(../imagesMIN/chevron-thin-right.svg);
+            -webkit-mask-image: url(../images/chevron-thin-right.svg);
+            mask-image: url(../images/chevron-thin-right.svg);
             -webkit-mask-size: cover;
             mask-size: cover;
             background-image: none;
