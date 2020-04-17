@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link  rel="stylesheet" type="text/css" href="build/css/Styles.css"  >
+        <link  rel="stylesheet" type="text/css" href="src/css/Styles.css"  >
     
         <title>trillo &mdash; Your all-in-one booking app</title>
     
@@ -13,19 +13,19 @@
        <body>
          <div class="container">
              <header class="header">
-                 <img src="build/imagesMIN/logo.png"  alt="Trillo logo" class="logo">
+                 <img src="src/images/logo.png"  alt="Trillo logo" class="logo">
                  <form action="#" class="search"  >
                      <input type="text" class="search__input" placeholder="hotel search">
                      <button class="search__button">
                          <svg class="search__icon">
-                             <use  xlink:href ="build/imagesMIN/sprite.svg#icon-magnifying-glass" ></use>  
+                             <use  xlink:href ="src/images/sprite.svg#icon-magnifying-glass" ></use>  
                          </svg>
                      </button>
                  </form>
                  <div class="user-nav">
                      <div class="user-nav__icon-box">
                          <svg class="user-nav__icon">
-                            <use xlink:href="build/imagesMIN/sprite.svg#icon-bookmark" ></use>
+                            <use xlink:href="src/images/sprite.svg#icon-bookmark" ></use>
                             <span class="user-nav__notification"> 7</span>
                         </svg>
                      </div>
@@ -37,17 +37,17 @@
                         <div class="user-nav__icon-box--message">
                             <div class="message__box">
                                 <a href="#" class="message__link">
-                                    <img src="build/imagesMIN/user-1.jpg" alt="Friend 1" class="message_photo">
+                                    <img src="src/images/user-1.jpg" alt="Friend 1" class="message_photo">
                                     <span class="message__name">NICK SMITH </span>
                                    <p class="message_text">"Lorem ipsum dolor sit amet ...  Lorem!!!! "</p> 
                                 </a>
                                 <a href="#" class="message__link">
-                                    <img src="build/imagesMIN/user-4.jpg" alt="Friend 1" class="message_photo">
+                                    <img src="src/images/user-4.jpg" alt="Friend 1" class="message_photo">
                                     <span class="message__name">Jerome  Lukas </span>
                                    <p class="message_text">"Lorem ipsum dolor sit amet consectetur adipisicing elit....    "</p> 
                                 </a>
                                 <a href="#" class="message__link">
-                                    <img src="build/imagesMIN/user-6.jpg" alt="Friend 1" class="message_photo">
+                                    <img src="src/images/user-6.jpg" alt="Friend 1" class="message_photo">
                                     <span class="message__name">Jasmin Moon </span>
                                    <p class="message_text">"Lorem ipsum dolor sit amet consectetur adipisicing elit..."</p> 
                                 </a>
@@ -56,14 +56,14 @@
 
                      </div>
                      <div class="user-nav__user">
-                         <img src="build/imagesMIN/user.jpg" alt="user photo" class="user-nav__user-image">
+                         <img src="src/images/user.jpg" alt="user photo" class="user-nav__user-image">
                          <span class="user-nav__user-name"> Jonas   </span>
                          <div class="user__dropdown">
                              <ul class="user__dropdown__list">
                                  <li class="user__dropdown__item">
                                     <a href="#" class="user__dropdown__link">
                                         <svg class="user__dropdown__icon">
-                                           <use  xlink:href ="build/imagesMIN/sprite2.svg#icon-user" ></use>  
+                                           <use  xlink:href ="src/images/sprite2.svg#icon-user" ></use>  
                                         </svg>
                                         <span class="user__dropdown__text"> profile</span>
                                     </a>
@@ -71,7 +71,7 @@
                                  <li class="user__dropdown__item">
                                     <a href="#" class="user__dropdown__link">
                                         <svg class="user__dropdown__icon">
-                                           <use  xlink:href ="build/imagesMIN/sprite2.svg#icon-cog" ></use>  
+                                           <use  xlink:href ="src/images/sprite2.svg#icon-cog" ></use>  
                                         </svg>
                                         <span class="user__dropdown__text">settings</span>
                                     </a>
@@ -79,7 +79,7 @@
                                  <li class="user__dropdown__item">
                                     <a href="#" class="user__dropdown__link">
                                         <svg class="user__dropdown__icon">
-                                           <use  xlink:href ="build/imagesMIN/sprite2.svg#icon-circular-graph" ></use>  
+                                           <use  xlink:href ="src/images/sprite2.svg#icon-circular-graph" ></use>  
                                         </svg>
                                         <span class="user__dropdown__text"> logout</span>
                                     </a>
@@ -97,7 +97,7 @@
                        <li class="side-nav__item side-nav__item--active">
                            <a href="#" class="side-nav__link">
                                <svg class="side-nav__icon">
-                                   <use xlink:href="build/imagesMIN/sprite.svg#icon-home"></use>
+                                   <use xlink:href="src/images/sprite.svg#icon-home"></use>
                                </svg>
                                <span>hotel</span>
                            </a>
@@ -105,7 +105,7 @@
                        <li class="side-nav__item">
                            <a href="#" class="side-nav__link">
                                <svg class="side-nav__icon">
-                                   <use xlink:href= "build/imagesMIN/sprite.svg#icon-aircraft-take-off"></use>
+                                   <use xlink:href= "src/images/sprite.svg#icon-aircraft-take-off"></use>
                                </svg>
                                <span>flight</span>
                            </a>
@@ -113,7 +113,7 @@
                        <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <svg class="side-nav__icon">
-                                <use xlink:href= " build/imagesMIN/sprite.svg#icon-key"></use>
+                                <use xlink:href= " src/images/sprite.svg#icon-key"></use>
                             </svg>
                             <span>car rental</span>
                         </a>
@@ -121,7 +121,7 @@
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use xlink:href= "build/imagesMIN/sprite.svg#icon-map"></use>
+                                    <use xlink:href= "src/images/sprite.svg#icon-map"></use>
                                 </svg>
                                 <span>tours</span>
                             </a>
@@ -134,15 +134,15 @@
                 <main class="hotel-view">
                     <div class="gallery">
                         <figure class="gallery__item">
-                            <img src="build/imagesMIN/hotel-1.jpg" alt="hotel 1" class="gallery__photo">
+                            <img src="src/images/hotel-1.jpg" alt="hotel 1" class="gallery__photo">
                             <span class="gallery__title">Hotel <br> Bright</span>
                         </figure>
                         <figure class="gallery__item">
-                            <img src="build/imagesMIN/hotel-2.jpg" alt="hotel 2" class="gallery__photo">
+                            <img src="src/images/hotel-2.jpg" alt="hotel 2" class="gallery__photo">
                             <span class="gallery__title">Hotel <br> Sparkling</span>
                         </figure>
                         <figure class="gallery__item">
-                            <img src="build/imagesMIN/hotel-3.jpg" alt="hotel 3" class="gallery__photo">
+                            <img src="src/images/hotel-3.jpg" alt="hotel 3" class="gallery__photo">
                             <span class="gallery__title">Hotel <br> Light</span>
                         </figure>
                     </div>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="overview__location">
                             <svg class="overview_icon-location">
-                                <use xlink:href="build/imagesMIN/sprite.svg#icon-location-pin"></use>
+                                <use xlink:href="src/images/sprite.svg#icon-location-pin"></use>
                             </svg>
                             <button class="btn-inline">Albufeira, Portugal
                             </button>
@@ -202,10 +202,10 @@
                                     Lucy and 3 other friends recommend this hotel.
                                 </p>
                                 <div class="recommend__friends">
-                                    <img src="build/imagesMIN/user-3.jpg" alt="Friend 1" class="recommend__photo">
-                                    <img src="build/imagesMIN/user-4.jpg" alt="Friend 4" class="recommend__photo">
-                                    <img src="build/imagesMIN/user-5.jpg" alt="Friend 5" class="recommend__photo">
-                                    <img src="build/imagesMIN/user-6.jpg" alt="Friend 6" class="recommend__photo">
+                                    <img src="src/images/user-3.jpg" alt="Friend 1" class="recommend__photo">
+                                    <img src="src/images/user-4.jpg" alt="Friend 4" class="recommend__photo">
+                                    <img src="src/images/user-5.jpg" alt="Friend 5" class="recommend__photo">
+                                    <img src="src/images/user-6.jpg" alt="Friend 6" class="recommend__photo">
                                 </div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex
                                </blockquote>
                                <figcaption class="review__user">
-                                   <img src="build/imagesMIN/user-1.jpg" alt="User 1" class="review__user-photo">
+                                   <img src="src/images/user-1.jpg" alt="User 1" class="review__user-photo">
                                    <div class="review__user-box">
                                        <p class="review__user-name">NICK SMITH</p>
                                        <p class="review__user-date">Feb 23rd, 2020</p>
@@ -228,7 +228,7 @@
                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex
                             </blockquote>
                             <figcaption class="review__user">
-                                <img src="build/imagesMIN/user-2.jpg" alt="User 2" class="review__user-photo">
+                                <img src="src/images/user-2.jpg" alt="User 2" class="review__user-photo">
                                 <div class="review__user-box">
                                     <p class="review__user-name">MARY THOMAS</p>
                                     <p class="review__user-date">Sept 13th, 2020</p>

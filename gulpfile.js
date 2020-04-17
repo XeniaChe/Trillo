@@ -22,11 +22,11 @@ function style() {
    
     return gulp.src('src/sass/styles.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(build + 'css/'))
+    .pipe(gulp.dest(src + 'css/'))
     .pipe(browserSync.stream())
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest(build + 'css/'))
+    .pipe(gulp.dest(src + 'css/'))
     // .pipe(notify({message: 'Style task complete'}))
     ;
 }
@@ -49,10 +49,10 @@ exports.watch = watch;
 function images(){
     // const out = build + 'images/';
     return gulp.src(src + 'images/**/*')
-    .pipe(newer(build))
+    .pipe(newer(src))
     // .pipe(newer(out))
     .pipe(imagemin({optimizationlevel: 5 }))
-    .pipe(gulp.dest(build + 'imagesMIN'));
+    .pipe(gulp.dest(src + 'imagesMIN'));
     // .pipe(gulp.dest(out));
 };
 exports.images = images;
